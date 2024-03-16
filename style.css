@@ -1,0 +1,831 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar inicio */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    font-family: 'ubuntu', sans-serif;
+    z-index: 999;
+    transition: all 1s ease;
+}
+
+.navbar img {
+    width: 100px;
+}
+
+
+.navbar.sticky {
+    background: #fff;
+    padding: 20px 0;
+    transition: 1s;
+}
+
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.navbar .logo a span {
+    color: #781bcf;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span {
+    color: #781bcf;
+}
+
+.navbar.sticky .logo {
+    background: #2a2a2a;
+    padding: 8px;
+    border-radius: 6px;
+    transition: 1s;
+}
+
+.navbar.sticky .menu li a {
+    color: #781bcf;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: 1s ease;
+}
+
+.navbar .menu li a:hover {
+    color: #781bcf;
+    background: #fff;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+
+.navbar.sticky .menu li a:hover {
+    background: #781bcf;
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+    transition: 1s;
+}
+/* Home inicio */
+
+.home {
+    display: flex;
+    background: url(img/fundo.png)no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.home .max-width {
+    display: flex;
+    margin: 80px 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3 {
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    left: 170px;
+}
+
+
+.redes ion-icon{
+    font-size: 30px;
+    margin-top: 10px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.git ion-icon:hover {
+    color: #111;
+    transform: scale(1.1);
+}
+
+.linke ion-icon:hover {
+    color: #008fd1;
+    transform: scale(1.1);
+}
+
+.home .home-content .text-3 span {
+    color: #781bcf;
+    font-weight: 500;
+}
+
+.home .home-content a {
+    display: inline-block;
+    background: #781bcf;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #781bcf;
+    transition: 0.8s ease;
+}
+
+.home .home-content a:hover {
+    background: #fff;
+    color: #781bcf;
+    border: 2px solid #fff;
+}
+
+.imagemlo img {
+    width: 360px;
+    margin: 0 0 0 150px;
+    transform: translateY(0px);
+    animation: float 5s ease-in-out infinite;
+}
+
+
+/* todos os codigos similares */
+
+section {
+    padding: 100px 0;
+}
+
+section .title {
+    font-family: 'ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+section .title2 {
+    font-family: 'ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title2::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -12px; 
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    color: #00804b;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+section .title2::after {
+    position: absolute;
+    bottom: -12px; 
+    left: 50%;
+    font-size: 20px;
+    background: #fff;
+    color: #00804b;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+.about, .services, .skills, .disciplina, .desenvolvimento,.rodape {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* sessão sobre */
+.about {
+    background: #111;
+}
+
+.about .title {
+    color: #742fb5;
+}
+
+.about .title::after {
+    content: "Quem sou eu";
+    color: #fff;
+    background-color: #111;
+}
+
+.about .about-content .left {
+    width: 45%;
+}
+
+.about .about-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.about .title::before {
+    background: #fff;
+}
+
+.about .about-content .right .text span {
+    color: #742fb5;
+}
+
+.about .about-content .right p {
+    text-align: justify;
+    color: #fff;
+}
+
+
+.about .about-content .left img {
+    width: 290px;
+    height: 290px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    transition: 1s ease;
+}
+
+.about .about-content .left img:hover {
+    width: 300px;
+    height: 300px;
+    border: 4px solid #742fb5;
+}
+
+/* sessão conquistas, qualidades e objetivos */
+
+.services {
+    color: #fff;
+}
+
+.services .max-width .title {
+    color: #742fb5;
+} 
+
+.services .title::before {
+    background: #111;
+}
+
+.services .title::after {
+    background: #fff;
+    content: "Sobre mim";
+    color: #111;
+}
+
+.services .serv-content .card {
+    width: calc(33% - 20px);
+    height: 250px;
+    background: #111;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card:hover {
+    background: #781bcf;
+    color: #fff;
+    transform: scale(1.05);
+} 
+
+.services .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+
+.services .serv-content .card ion-icon {
+    font-size: 70px;
+    color: #781bcf;
+}
+
+.services .serv-content .card:hover ion-icon {
+    color: #fff;
+}
+
+.services .serv-content .card .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+/* sessão especialidades */
+.skills {
+    background: #111;
+}
+
+.skills .title::before {
+    background: #fff;
+}
+
+.skills .max-width .title {
+    color: #781bcf;
+}
+
+.skills .title:after {
+    content: "Que faço";
+    color: #fff;
+    background: #111;
+}
+
+.skills .skills-content .column {
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #742fb5;
+}
+
+.skills .skills-content .left p {
+    text-align: justify;
+    color: #fff;
+}
+
+.skills .skills-content .left a {
+    display: inline-block;
+    background: #742fb5;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #742fb5;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover {
+    color: #fff;
+    background: #2a2a2a;
+    border: 2px solid #2a2a2a;
+}
+
+.skills .skills-content .right .bars {
+    margin-bottom: 15px;
+}
+
+.skills .skills-content .right .bars .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.skills .skills-content .right .line {
+    width: 100%;
+    height: 5px;
+    background: #ccc;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #742fb5;
+}
+
+.skills .skills-content .right .html::before {
+    width: 80%;
+}
+
+.skills .skills-content .right .css::before {
+    width: 80%;
+}
+
+.skills .skills-content .right .js::before {
+    width: 50%;
+}
+
+.skills .skills-content .right .python::before {
+    width: 47%;
+}
+
+.skills .skills-content .right .mysql::before {
+    width: 50%;
+}
+
+/* Cursos */
+
+.services, .teams {
+    color: #fff;
+}
+
+.services .max-width .title2 {
+    color: #742fb5;
+} 
+
+.services .title2::before {
+    background: #111;
+}
+
+.services .title2::after,
+.teams .title2::after {
+    background: #fff;
+    content: "Complementares";
+    color: #111;
+}
+
+.services .serv-content .card2 {
+    width: calc(33% - 20px);
+    height: 320px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card2:hover {
+    background: #781bcf;
+    color: #fff;
+} 
+
+.services .serv-content .card2 .box2 {
+    transition: all 0.3s ease;
+}
+
+.services .serv-content .card2:hover .box2{
+    transform: scale(1.05);
+}
+
+.services .serv-content .card2 ion-icon {
+    font-size: 70px;
+    color: #781bcf;
+}
+
+.services .serv-content .card2:hover ion-icon {
+    color: #fff;
+}
+
+.services .serv-content .card2 .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Disciplina */
+
+.disciplina .title::after {
+    background: #111;
+    content: "Projetos";
+    color: #fff;
+}
+
+.disciplina .title::before  {
+    background: #fff;
+}
+
+.disciplina .max-width .title {
+    color: #742fb5;
+}
+
+.disciplina {
+    background: #111;
+    height: 120vh;
+}
+
+.tudoslide {
+    position: relative;
+    top: -120px;
+    left: 40px;
+    height: 600px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.logoDi img {
+    position: relative;
+    left: 560px;
+    width: 150px;
+    transition: 1.5s;
+    cursor: pointer;
+    transform: translateY(0px);
+    animation: float2 5s ease-in-out infinite;
+    margin-bottom: -60px;
+    margin-top: -40px;
+}
+
+
+.swiper {
+    width: 1300px;
+}
+
+.card4 {
+    position: relative;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+section .card4 .image {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px;
+}
+
+section .card4 .image img {
+    height: 200px;
+    width: 350px;
+    border-radius: 2px;
+    transition: all 0.4s;
+    opacity: 60%;
+    margin:-40px 0 -40px 20px;
+}
+
+section .card4 .image img:hover {
+    transform: scale(1.07);
+    opacity: 100%;
+}
+
+.image h1 {
+    position: relative;
+    top: -55px;
+    left: 138px;
+    color: #742fb5;
+}
+
+.swiper-pagination {
+    position: relative;
+    top: 450px;
+    margin-left: 30px;
+}
+
+/* Desenviolvimento Web */
+
+.desenvolvimento {
+    background: #111;
+    height: 100vh;
+}
+
+
+.desenvolvimento .title::after {
+    background: #111;
+    content: "Web";
+    color: #fff;
+}
+
+.desenvolvimento .serv-content {
+    display: flex;
+    
+}
+
+.desenvolvimento .title::before  {
+    background: #fff;
+    width: 100px;
+}
+
+.desenvolvimento .max-width .title {
+    color: #742fb5;
+}
+
+.desenvolvimento .serv-content .card1, .card2, .card3 {
+    width: calc(33% - 20px);
+    height: 295px;
+    background: #fff;
+    color: #111;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px 20px 0 40px;
+}
+
+.desenvolvimento .serv-content .card1:hover, .card2:hover, .card3:hover {
+    background: #781bcf;
+    color: #fff;
+} 
+
+.desenvolvimento .serv-content .card1, .card2, .card3, .box {
+    transition: all 0.3s ease;
+}
+
+.desenvolvimento .serv-content .card1:hover, .card2:hover, .card3:hover, .box{
+    transform: scale(1.05);
+}
+
+.desenvolvimento .serv-content .card1  ion-icon {
+    font-size: 70px;
+    color: #ff8000;
+}
+
+.desenvolvimento .serv-content .card2  ion-icon {
+    font-size: 70px;
+    color: rgb(6, 78, 247);
+}
+
+.desenvolvimento .serv-content .card3  ion-icon {
+    font-size: 70px;
+    color: #ffc800;
+}
+
+.desenvolvimento .serv-content .card1  ion-icon {
+    font-size: 70px;
+    color: #ff8000;
+}
+
+.desenvolvimento .serv-content .card1:hover  ion-icon {
+    font-size: 70px;
+    color: #fff;
+}
+
+.desenvolvimento .serv-content .card2:hover  ion-icon {
+    font-size: 70px;
+    color: #fff;
+}
+
+.desenvolvimento .serv-content .card3:hover  ion-icon {
+    font-size: 70px;
+    color: #fff;
+}
+
+
+
+.desenvolvimento .serv-content .card1 .card2 .card3 .text {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* Rodape */
+
+.rodape {
+    background: #fff;
+    height: 70px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    text-align: center;
+}
+
+.rodape a ion-icon {
+    margin: 25px 10px 0 0;
+    color: #111;
+    font-size: 20px;
+}
+
+.email{
+    text-decoration: none;
+    color: #111;
+    position: relative;
+    top: -5px;
+}
+
+
+.rodape p {
+    color: #111;
+    position: relative;
+    top: -5.5px;
+    left: 5px;
+}
+
+.phone {
+    margin-left: 10px;
+}
+
+.rodape ion-icon {
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.rodape .linke {
+    margin-right: 200px;
+}
+
+
+.rodape ion-icon:hover {
+    transform: scale(1.3);
+}
+
+.linked {
+    transition: all 1s ease;
+    margin-right: 200px;
+}
+
+.linked ion-icon:hover {
+    transform: scale(1.3);
+}
+
+/* Keyframes */
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-60px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes float2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
